@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                python dir.py
+                echo "jenkinsfile content..."
             }
 
         }
