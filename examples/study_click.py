@@ -17,8 +17,8 @@ def show(rate):
 
 
 # if __name__ == '__main__':
-    # func()
-    # show()
+# func()
+# show()
 
 
 @click.command()
@@ -32,10 +32,37 @@ def input_password(password):
 
 
 @click.command()
-@click.option('--name', help='The person to greet.')
+@click.option('--name', help = 'The person to greet.')
 def hello(name):
-    click.secho('Hello %s!' % name, fg='red', underline=True)
-    click.secho('Hello %s!' % name, fg='yellow', bg='black')
+    click.secho('Hello %s!' % name, fg = 'red', underline = True)
+    click.secho('Hello %s!' % name, fg = 'yellow', bg = 'black')
+
+
+# if __name__ == '__main__':
+#     hello()
+
+
+@click.group()
+def gpfun():
+    pass
+
+
+@click.command()
+@click.option('--name', prompt = 'enter your name here: ',
+              help = 'greet to given name')
+def hello(name):
+    click.echo('Hello World! hello %s' % name)
+
+
+@click.command()
+@click.option('--name', prompt = 'enter your name here: ',
+              help = 'greet to given name')
+def hello1(name):
+    click.echo('Hello World! hello %s' % name)
+
+
+gpfun.add_command(hello)
+gpfun.add_command(hello1)
 
 if __name__ == '__main__':
     hello()
