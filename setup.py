@@ -17,9 +17,12 @@ setup(
     ''',
 )
 
+# pip 的命令的使用说明书。
+# https://pip.pypa.io/en/stable/quickstart/
+
 # pip install --editable . 生成命令
 # python setup.py sdist  打成tar.gz包
-# python setup.py bdist_wheel 打成whl包
+# python setup.py bdist_wheel / pip wheel 打成whl包
 # python setup.py sdist bdist_wheel 一起打whl，tar.gz包
 # python setup.py sdist bdist_wheel -w ./package
 
