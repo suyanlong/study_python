@@ -12,13 +12,16 @@ list = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 for i, item in enumerate(list):
     print i, item
 
+
+pprint.pprint(enumerate(list))
 # 2.
-
-my_dict = {i: i * i for i in xrange(100)}
-my_set = {i * 15 for i in xrange(100)}
-
+my_dict = {i: i for i in xrange(10)}
+my_set = {i for i in xrange(10)}
 pprint.pprint(my_dict)
 pprint.pprint(my_set)
+
+pprint.pprint(range(4))
+pprint.pprint("==========")
 
 # 3. 引入__futrue__特性，需要放到文件头部地方。
 # from __future__ import division
@@ -56,5 +59,8 @@ print a[::-1]
 # [on_true] if [expression] else [on_false]
 x, y = 50, 25
 small = x if x < y else y
+print(small)
 
-
+# 字符串链接
+string = "string %d" % 12
+print(string)
