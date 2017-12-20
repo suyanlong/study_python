@@ -19,7 +19,7 @@ def consensus(test, duration, consensus, path):
     _consensus(test, duration, consensus, path)
 
 
-def _consensus(test, duration, consensus, path):
+def _consensus(test = True, duration = 3000, consensus = 'tendermint', path = './'):
     secret_path = os.path.join(path, "privkey")
     with open(secret_path, "r") as secret_key:
         signer = secret_key.read()

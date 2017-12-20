@@ -14,6 +14,10 @@ import click
 @click.option("--ws_port", "-W", default = 4337, help = "listen WebSocket protocol,default: 4337")
 @click.option("--path", default = "./", help = "config file path, default: ./ ")
 def jsonrpc(http, http_port, ws, ws_port, path):
+    _jsonrpc(http, http_port, ws, ws_port, path)
+
+
+def _jsonrpc(http = True, http_port = 1337, ws = True, ws_port = 4337, path = './'):
     """genrate jsonrpc config file"""
 
     profile_config = dict(enable = False, flag_prof_start = 0, flag_prof_duration = 0)

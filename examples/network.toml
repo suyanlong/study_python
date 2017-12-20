@@ -1,0 +1,15 @@
+id_card = 3
+port = 4003
+max_peer = 3
+[[peers]]
+id_card = 0
+ip = "127.0.0.1"
+port = 4000
+[[peers]]
+id_card = 1
+ip = "127.0.0.1"
+port = 4001
+[[peers]]
+id_card = 2
+ip = "127.0.0.1"
+port = 4002
