@@ -1,0 +1,12 @@
+{
+    "engine": {
+        "Tendermint": {
+            "params": {
+                "signer": "f5211e4fa8b65c821dc07b9f7a810b387dad2b2a1b12b7a361154f7260df8ddd", 
+                "is_test": true, 
+                "duration": 3000
+            }
+        }
+    }, 
+    "name": "tendermint"
+}
